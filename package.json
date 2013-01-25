@@ -1,0 +1,40 @@
+{
+  "name": "derp",
+  "version": "0.0.1",
+  "description": "Reverse proxy server for development purposes",
+  "keywords": [
+    "dev",
+    "apache"
+  ],
+  "author": "Dalee Digital Agency <dev@dalee.ru>",
+  "contributors": [
+    {"name": "Alex Yaroshevich", "email": "alex@qfox.ru"}
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:zxqfox/derp.git"
+  },
+  "license": "MIT",
+  "directories": {
+    "lib": "./lib",
+    "test": "./test"
+  },
+  "main": "lib/derp.js",
+  "bin": "derp",
+  "engine": "node >= 0.8.0",
+  "dependencies": {
+    "q": "0.8.x",
+    "q-fs": "0.1.x",
+    "q-http": "0.1.x",
+    "glob": "3.x",
+    "xtend": "1.0.x",
+    "js-yaml": "1.x",
+    "winston": "*",
+    "forever-monitor": "1.x"
+  },
+  "devDependencies": {
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

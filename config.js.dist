@@ -1,0 +1,15 @@
+module.exports = {
+	// legend. server: { location: { }, location: { }, ... }, ...
+	'some.domain.name': { // server
+		'/': { // location
+			proxy_pass: 'http://ya.ru/'
+		},
+		'/hey': {
+			socketPath: './greeter.socket',
+			worker: {
+				command: 'node',
+				args: ['greeter.js']
+			}
+		}
+	}
+};
